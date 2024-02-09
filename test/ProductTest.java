@@ -27,7 +27,7 @@ class ProductTest {
     }
 
     @Nested
-    class ContructorAndGetterTests{
+    class ConstructorAndGetterTests{
 
         @Test
         void boundaryTestsForProductNameValidation() {
@@ -67,7 +67,7 @@ class ProductTest {
             assertEquals(1, tv42Inches.getUnitCost());            // 1 is valid - value accepted
             assertEquals(99.99, tv50Inches.getUnitCost());        // 99.99 is valid - value accepted
             assertEquals(245.99, tv60Inches.getUnitCost());       // 245.99 is valid - value accepted
-            assertEquals(1, noNameProduct.getUnitCost()); // 0 is invalid - defaulting to max value for integer
+            assertEquals(1,0, noNameProduct.getUnitCost()); // 0 is invalid - defaulting to max value for integer
         }
 
         @Test
@@ -179,3 +179,4 @@ class ProductTest {
         }
     }
 }
+
